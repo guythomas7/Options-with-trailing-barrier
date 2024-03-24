@@ -1,0 +1,7 @@
+Import the files to a directory, and set the working directory as that location.
+
+You can then generate all the diagrams in the paper. 
+
+For Figures 1 and 2, the parameters at the start of the file are as used to generate the graphs.
+
+For Figure 3, 
