@@ -2,7 +2,7 @@ Download the files to a directory Set the working directory in R as that locatio
 
 You can then generate all the graphs in the paper. 
 
-The OptionFunctions.R file contains a single function called MCVD (Monte Carlo Valuation and Delta).
+The OptionFunctions.R file contains a single function called MCVD (Monte Carlo Valuation and Delta), which is called from the main Option Valuation and Replication file when it needs to generate the initial option price and delta.
 
 For Figures 1 and 2, the parameters at the start of the file are as are used to generate the graphs.
 
