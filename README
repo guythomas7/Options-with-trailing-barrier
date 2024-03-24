@@ -2,12 +2,14 @@ Download the files to a directory Set the working directory in R as that locatio
 
 You can then generate all the graphs in the paper. 
 
+The OptionFunctions.R file contains a single function called MCVD (Monte Carlo Valuation and Delta).
+
 For Figures 1 and 2, the parameters at the start of the file are as are used to generate the graphs.
 
 For Figure 3, I used:
 
 S = K = 1, r = 0.015, q = 0.01, tau = 5, sigma = 0.20, nSim = 100, guyseed = 1930, p = 6, N = 60 * 2(m-1) [so N = 60, 120, 240, 480, 960, 1920].  
-Set Initial_values = the relevant values for the above parameters, around line 170. 
+Set Initial_values = the relevant values (generated from nSim = 50,000 and N = 6300 in MCVD() function, for greater accuracy) for the above parameters, around line 170. 
 This took about 15 hours on my 13th generation Intel i5-13600KF processor.
 
 For Figures 4 and 5, I used:
