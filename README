@@ -21,7 +21,7 @@ Then graph the results using "plotting hedging errors - github version.R".
 
 -------------
 
-For Figures 4 and 5, change line 23 to "for (m in 6:p)", so that it only runs once, change line 51 to "N <- 2400" [OR IS IT 1920] so that it only runs once. Set other parameters as follows:
+For Figures 4 and 5, change p in 12 to 1, so that it only runs once, change line 51 to "N <- 2400" [OR IS IT 1920] so that it only runs once. Set other parameters as follows:
 
 S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. This took about 8 hours.  
 
