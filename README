@@ -37,6 +37,6 @@ For Figures 6 and 7, see the separate project on Double Reflection.
 -----------------
 NB Any call option prices in the ode are NOT accurate for a trailing barrier. They are evaluated solely by the call formula for a fixed barrier as in Thomas (2023), Equation 13 (even if you enter barrier_type ==“trailing”).  
 
-I have not done the finite difference exercise for a call. Calls are of less interest than puts because I anticipate that synthetic replication will be cheaper for a call (albeit with interim losses), as for the fixed-barrier case in Thomas (2023).
+I have not done the finite difference exercise for a call. Calls are of less interest than puts because I anticipate that synthetic replication will be cheaper for a call (albeit with interim losses), as for the fixed-barrier case in Thomas(2023).
 
 
