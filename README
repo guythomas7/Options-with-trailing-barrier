@@ -5,7 +5,7 @@ You can then generate all the graphs in my note "Brownian motio reflected at a t
 The "OptionFunctions.R" file contains a single function called MCVD (Monte Carlo Valuation and Delta), which is called from the main Option Valuation and Replication file when it needs to generate the initial option price and delta.
 
 
-For Figures 1 and 2, generate the numbers from "Generating asset paths - Fig 1 & 2 -github version.R". Then graph the results using "Draw asset paths - ig 1 & 2 -github version.R". 
+For Figures 1 and 2, generate the numbers from "Generating asset paths - Fig 1 & 2 -github version.R". Then graph the results using "Draw asset paths - Fig 1 & 2 -github version.R". Set RunNo to 23 at line 2 for the run shown in the paper.
 
 -------------
 
@@ -23,9 +23,11 @@ Then graph the results using "plotting hedging errors - github version.R".
 
 For Figures 4 and 5, change line 23 to "for (m in 6:p)", so that it only runs once, change line 51 to "N <- 2400" [OR IS IT 1920] so that it only runs once. Set other parameters as follows:
 
-S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. This took about 8 hours.  Run 34 is the one graphed.
+S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. This took about 8 hours.  
 
 Again, set Initial_values = the relevant values rom a high-N and high-nSim run of MCVD() for the above parameters, around line 170. 
+
+Then graph the results using "Draw asset path & option cash a& deltas - github version.R".  Set RunNo to 34 at line 2 for the run shown in the paper.
 
 ------------
 
