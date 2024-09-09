@@ -1,6 +1,6 @@
 Download the files to a directory. Set the working directory in R as that location.
 
-You can then generate all the graphs in my note "Brownian motio reflected at a trailing barrier and long-term option pricing".  
+You can then generate all the graphs in my note "Brownian motion reflected at a trailing barrier and long-term option pricing".  
 
 The "OptionFunctions.R" file contains a single function called MCVD (Monte Carlo Valuation and Delta), which is called from the main Option Valuation and Replication file when it needs to generate the initial option price and delta.
 
