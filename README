@@ -9,11 +9,11 @@ For Figures 1 and 2, generate the numbers from "Generating asset paths - Fig 1 &
 
 -------------
 
-For Figure 3, generate the numbers from "Option valuation and replication - generates Figures 3 to 5 - github verison.R".  The sample code has N (number of time-steps) set to 60 to run quickly. For Figure 3 I used:
+For Figure 3, generate the numbers from "Option valuation and replication - generates Figures 3 to 5 - github version.R".  The sample code has N (number of time-steps) set to 60 to run quickly. For Figure 3 I used:
 
-p (number of data points in the graph) = 6, S = K = 1, r = 0.015, q = 0.01, tau = 5, sigma = 0.20, nSim = 100, guyseed = 1930, N = 60 * 2(m-1) [so N = 60, 120, 240, 480, 960, 1920].  And barrier_type = "fixed" or "trailing" (with quotes) as required.
+p (number of data points in the graph) = 6, S = K = 1, b = 0.6, r = 0.015, q = 0.01, tau = 5, sigma = 0.20, nSim = 100, guyseed = 1930, N = 60 * 2^(m-1) [so N = 60, 120, 240, 480, 960, 1920].  And barrier_type = "fixed" or "trailing" (with quotes) as required.
 
-For greater accuracy, rather than calling the function MCVD() each time the program is run, set Initial_values = the relevant values generated from a single run of MCVD() with high N and nSim (I used nSim = 50,000 and N = 6300).
+For greater accuracy, rather than calling the function MCVD() around line 170 each time the program is run, I set Initial_values = the relevant values generated from a single run of MCVD() with high N and nSim (I used nSim = 50,000 and N = 6300).
 
 This all took about 15 hours on my new-in-2023 desktop PC (13th generation Intel i5-13600KF processor), for each of "fixed" and "trailing".
 
@@ -23,15 +23,15 @@ Then graph the results using "plotting hedging errors - github version.R".
 
 For Figures 4 and 5, change line 12 to "p <- 1", so that it only runs once; change line 51 to "N <- 2400". Set other parameters as follows:
 
-S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. Runtime about 8 hours for fixed barrier, 15 hours for trailing barrier.  
+S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. Runtime about 8 hours for fixed barrier, 14 hours for trailing barrier.  
 
-Again, I've set the Initial_values = the relevant values rom a high-N and high-nSim run of MCVD() for the above parameters, around line 170. **THIS NEEDS CHANGING TO RUN WITH OTHER PARAMETERS.**  
+Again, I set the Initial_values = the relevant values rom a high-N and high-nSim run of MCVD() for the above parameters, at around line 170. **THIS NEEDS CHANGING IF YOU RUN WITH OTHER PARAMETERS.**  
 
-Then graph the results using "Draw asset path & option cash a& deltas - github version.R".  Set RunNo to 34 at line 2 for the run shown in the paper.
+Then graph the results using "Draw asset path & option cash & deltas - github version.R".  Set RunNo to 34 at line 2 for the run shown in the paper.
 
 ------------
 
-For Figures 6 and 7, see the separate project on Double Reflection.
+For Figures 6 and 7, see the separate github project on Double Reflection.
 
 
 -----------------
