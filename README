@@ -23,7 +23,7 @@ Then graph the results using "plotting hedging errors - github version.R".
 
 For Figures 4 and 5, change line 12 to "p <- 1", so that it only runs once; change line 51 to "N <- 2400". Set other parameters as follows:
 
-S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. This took about 8 hours for each graph.  
+S = K = 1 (or 1.25 for Figure 5), r = 0.015, q = 0.01, tau = 10, sigma = 0.20, nSim = 100, guyseed = 1930. Again, barrier_type = "fixed" and "trailing" as required. Runtime about 8 hours for fixed barrier, 15 hours for trailing barrier.  
 
 Again, I've set the Initial_values = the relevant values rom a high-N and high-nSim run of MCVD() for the above parameters, around line 170. **THIS NEEDS CHANGING TO RUN WITH OTHER PARAMETERS.**  
 
