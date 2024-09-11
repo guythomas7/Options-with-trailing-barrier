@@ -15,7 +15,7 @@ p (number of data points in the graph) = 6, S = K = 1, b = 0.6, r = 0.015, q = 0
 
 For greater accuracy, rather than calling the function MCVD() around line 170 each time the program is run, I set Initial_values = the relevant values generated from a single run of MCVD() with high N and nSim (I used nSim = 50,000 and N = 6300).
 
-This took about 8 hours on my new-in-2023 desktop PC (13th generation Intel i5-13600KF processor), for each of "fixed" and "trailing".
+This took about 8 hours for barrrier_type "fixed" and 12 hours for "trailing", on my new-in-2023 desktop PC (13th generation Intel i5-13600KF processor).
 
 Then graph the results using "plotting hedging errors - github version.R".
 
